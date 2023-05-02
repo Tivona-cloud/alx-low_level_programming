@@ -8,16 +8,18 @@
  * Return: a and n inputs
  */
 void print_array(int *a, int n)
-{
-	int i;
 
-	for (i = 0; i < (n - 1); i++)
+{
+
+	int j;
+
+	for (j = 0; j < n; j++)
 	{
-		printf("%d,", a[i]);
+		printf("%d,", a[j]);
 	}
-		if (i == (n - 1))
+		if (j != (n - 1))
 		{
-			printf("%d", a[n - 1]);
+			printf(", ");
 		}
 			printf("\n");
 }
